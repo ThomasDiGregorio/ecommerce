@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class FormInput extends Component {
   render() {
-    const { classname, title, type, placeholder, input } = this.props;
+    const { className, title, type, placeholder, input } = this.props;
     return (
       <div className={`${className} form-input`}>
         <label> className='form-input__label'{title}</label>
@@ -18,7 +18,7 @@ export class FormInput extends Component {
 
 export class FormButton extends Component {
   render() {
-    const { classname, title, type, onClick, input } = this.props;
+    const { className, title, type, onClick, input } = this.props;
     return (
       <div className={`${className} form-button`}>
         <button
