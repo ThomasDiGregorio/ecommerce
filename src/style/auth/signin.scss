@@ -2,15 +2,17 @@
   grid-row: content-s/content-e;
   grid-column: s/e;
 
-  &__page-title {
-  }
+  //&__page-title {
+  //}
 
   &_form {
     display: grid;
-    grid-template-rows: [email-s] 64px [email-e password-s] 64px [password-end] minmax(
+    grid-template-rows:
+      [email-s] 64px [email-e password-s] 64px [password-end] minmax(
         20px,
         289px
-      ) [line-s] 2px [line-e login-s] 38px [login-e];
+      )
+      [line-s] 2px [line-e login-s] 38px [login-e];
   }
 }
 
