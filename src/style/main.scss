@@ -17,8 +17,9 @@ body {
 
 @import "/layout.scss";
 @import "/headernavbar";
-@import "auth/signin";
-@import "auth/signup";
-
 @import "page-title";
 @import "form-fields";
+@import "details";
+
+@import "auth/signin";
+@import "auth/signup";
