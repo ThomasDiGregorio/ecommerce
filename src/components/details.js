@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class Details extends Component {
   renderChildren = () => {
+    console.log(this.props);
     const { links, info } = this.props;
     let children = [];
     if (links) {
