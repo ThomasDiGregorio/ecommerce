@@ -45,11 +45,12 @@
     grid-column: create-s/create-e;
   }
   &__back {
+    grid-row: buttons-s/buttons-e;
     grid-column: back-s/back-e;
   }
   &__details {
     grid-row: 1/-1;
-    justify-self: end;
-    align-self: start;
+    //justify-self: end;
+    //align-self: start;
   }
 }
