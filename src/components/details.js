@@ -6,7 +6,7 @@ class Details extends Component {
     const { links, info } = this.props;
     let children = [];
     if (links) {
-      children = info.map((link) => {
+      children = links.map((link) => {
         return (
           <a key={link._id} onClick={link.onClick} className="details__link">
             {link.title}
