@@ -43,7 +43,8 @@ class Account extends Component {
     let jsx;
     if (this.props.navbarLinks) {
       this.props.navbarLinks.forEach((link) => {
-        console.log(link);
+        // console.log(link); testing the output of links.
+
         if (link.active) {
           jsx = link.component;
         }
