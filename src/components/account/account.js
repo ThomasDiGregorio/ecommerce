@@ -36,8 +36,8 @@ class Account extends Component {
       },
     ];
 
-    this.props.setHeaderLinks([headerLinks]);
-    this.props.setNavbarLinks([navbarLinks]);
+    this.props.setHeaderLinks(headerLinks);
+    this.props.setNavbarLinks(navbarLinks);
   }
   renderContent() {
     let jsx;

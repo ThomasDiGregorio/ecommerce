@@ -10,7 +10,7 @@ import * as actions from "../../actions";
 class SignUp extends Component {
   componentDidMount() {
     this.props.setHeaderLinks([]);
-    this.props.setnavbarLinks([]);
+    this.props.setNavbarLinks([]);
   }
 
   onSubmit = (fields) => {

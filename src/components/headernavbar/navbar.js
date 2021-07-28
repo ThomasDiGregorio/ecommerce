@@ -8,7 +8,7 @@ class Navbar extends Component {
     return (
       <div className="navbar">
         {this.props.navbarLinks.map((link, index) => {
-          console.log(link.component, index);
+          console.log(link);
 
           return (
             <a
@@ -16,7 +16,7 @@ class Navbar extends Component {
               key={index}
               onClick={() => this.props.changeNavbarActive(link._id)}
             >
-              {}
+              {link.title}
             </a>
           );
         })}
