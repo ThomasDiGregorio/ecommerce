@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class PurchaeDetail extends Component {
+class PurchaseDetail extends Component {
   render() {
     const { className } = this.props;
 
