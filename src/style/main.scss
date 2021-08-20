@@ -8,6 +8,8 @@
 
 // @import "auth/signup";
 
+// @import "shop/shop";
+
 html {
   font-size: 62.5%;
 }
@@ -27,11 +29,20 @@ body {
 
 @import "/layout.scss";
 @import "/headernavbar";
+
 @import "page-title";
 @import "form-fields";
 @import "details";
+
+//AUTH
 @import "auth/signin";
 @import "auth/signup";
+
+//ACCOUNT
 @import "account/account";
 @import "account/purchase-history";
+
 @import "account/account-information";
+
+// SHOP
+@import "shop/shop";
