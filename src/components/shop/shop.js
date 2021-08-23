@@ -4,8 +4,15 @@ import { connect } from "react-redux";
 import * as actions from "../../actions";
 import ShopSearchBar from "../shopSearchBar";
 import ShopProduct from "./shopProducts";
+import ShopCart from "../shop/shopCart";
 
 class Shop extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showCart: true,
+    };
+  }
   componentDidMount() {
     const headerLinks = [
       {
@@ -43,7 +50,7 @@ class Shop extends Component {
             return <ShopProduct {...product} key={product._id} />;
           })}
         </div>
-        {/* shop cart button */}
+        {this.state.showCart ? <ShopCart className="shop__cart" /> : ""}
       </div>
     );
   }
