@@ -24,7 +24,6 @@ class ShopCart extends Component {
     const { className } = this.props;
     return (
       <div className={`${className} shop-cart`}>
-        cart....
         <CartButton className="shop-cart__toggle" icon="fas fa-times" />
         <CartContent
           className="shop-cart__content"
@@ -34,3 +33,4 @@ class ShopCart extends Component {
     );
   }
 }
+export default ShopCart;
