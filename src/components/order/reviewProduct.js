@@ -6,7 +6,7 @@ class ReviewProduct extends Component {
     const { product, quantity } = this.props;
     const { imageUrl, title, price } = product;
     return (
-      <div classname="review-product">
+      <div className="review-product">
         <img className="review-product__image" src={imageUrl} />
         <div className="review-product__title">{title}</div>
         <div className="review-product__quantity">{quantity}</div>
