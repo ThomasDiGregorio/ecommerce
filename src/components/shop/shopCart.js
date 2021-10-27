@@ -17,14 +17,16 @@ function CartContent({ className, products }) {
     <div className={`${className} cart-content`}>
       <div className="cart-content__title">Cart ({count})</div>
       <div className="cart-content__products">{productsJSX}</div>
-
       <CartFooter className="cart-content__footer" products={products} />
     </div>
   );
 }
 
 function CartFooter({ className, products }) {
-  const price = 7.96;
+  let subtotal = 0;
+  products.map((cartProduct) => {
+    subtotal += cartProduct.quantity * cartProduct.product.price;
+  });
   return (
     <div className={`${className} cart-footer`}>
       <a
@@ -34,7 +36,7 @@ function CartFooter({ className, products }) {
         Checkout
       </a>
       <div className="cart-footer__subtotal">Subtotal</div>
-      <div className="cart-footer__price">${price}</div>
+      <div className="cart-footer__price">${subtotal}</div>
     </div>
   );
 }
