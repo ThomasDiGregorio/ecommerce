@@ -7,6 +7,8 @@ import PageTitle from "../pageTitle";
 import { connect } from "react-redux";
 import * as actions from "../../actions";
 
+import PaymentForm from "./paymentForm";
+
 class Payment extends Component {
   componentDidMount() {
     this.props.setHeaderLinks([]);
@@ -24,7 +26,7 @@ class Payment extends Component {
           className="sign-in__page-title"
           title="Payment Information"
         />
-        {/*<Payment onSubmit={this.onSubmit} className="sign-in__form" />*/}
+        <Payment onSubmit={this.onSubmit} className="sign-in__form" />
       </div>
     );
   }
